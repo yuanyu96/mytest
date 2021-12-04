@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--无参构造实例化Bean-->
+    <bean id="userDao" class="com.spring.impl.UserDaoImpl" init-method="init" destroy-method="destroy"></bean>
+    <!--静态工厂实力化Bean-->
+    <!--<bean id="userDao" class="com.spring.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+    <!--工厂实例方法实例化Bean-->
+    <!--<bean id="dynamic_factory" class="com.spring.factory.DynamicFactory"></bean>-->
+    <!--<bean id="userDao" factory-bean="dynamic_factory" factory-method="getUserDao"></bean>-->
+
+    <!--<bean id="userService" class="com.spring.impl.UserServiceImpl">-->
+        <!--name 等于号后面 填的是setUserDao  set后面首字母小写 ref后面填要注入的Bean id-->
+      <!--  <property name="userDao" ref="userDao"></property>
+    </bean>-->
+    <bean id="userService" class="com.spring.impl.UserServiceImpl">
+        <!--这里 name=填有参构造函数参数名字 -->
+       <!-- <constructor-arg name="userDao" ref="userDao"></constructor-arg>-->
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+</beans>

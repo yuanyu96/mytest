@@ -1,0 +1,13 @@
+
+`	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(¹ÙÇýøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ˆ‰‰Èøÿÿÿÿ
+1
+java:S36268"Remove this redundant jump.(ûÁÝ…
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ù¾ÆËüÿÿÿÿ
+Q	java:S125,"<This block of commented-out lines of code should be removed.(é÷Ýç
+P	java:S125/"<This block of commented-out lines of code should be removed.(‘—·(
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(›ÉËÖÿÿÿÿÿ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(í÷èºþÿÿÿÿ
+V	java:S125\"<This block of commented-out lines of code should be removed.(Î½ŽÓÿÿÿÿÿ
+N	java:S106g"9Replace this use of System.out or System.err by a logger.(ÔëÝú
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ

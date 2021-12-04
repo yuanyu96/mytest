@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../designPattern/designPattern.iml" filepath="$PROJECT_DIR$/../designPattern/designPattern.iml" />
+      <module fileurl="file://D:/我的资料/POI及EasyExcell/kuang-poi/kuang-poi.iml" filepath="D:/我的资料/POI及EasyExcell/kuang-poi/kuang-poi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../multithread-dealfile/multithread-dealfile.iml" filepath="$PROJECT_DIR$/../multithread-dealfile/multithread-dealfile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring.iml" filepath="$PROJECT_DIR$/../spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_start.iml" filepath="$PROJECT_DIR$/spring_start.iml" />
+      <module fileurl="file://D:/ThreadTest/threadtest.iml" filepath="D:/ThreadTest/threadtest.iml" />
+    </modules>
+  </component>
+</project>

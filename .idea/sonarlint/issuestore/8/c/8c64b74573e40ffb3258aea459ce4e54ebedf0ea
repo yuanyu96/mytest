@@ -1,0 +1,13 @@
+
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ø×žÔ–/
+X	java:S125"<This block of commented-out lines of code should be removed.(Î©”ú8ÈÓ¦Ô–/
+0
+java:S1220""Move this file to a named package.
+W
+java:S2274":Remove this call to "wait" or move it into a "while" loop.(¢¢´Æ8Á÷¤Ô–/
+J	java:S108")Either remove or fill this block of code.(‡˜ÚÚøÿÿÿÿ8Á÷¤Ô–/
+G
+java:S1181"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Á÷¤Ô–/
+H
+java:S1135	"2Complete the task associated to this TODO comment.(ž›ËÓ

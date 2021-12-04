@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd"
+>
+    <!--提供方应用信息，用于计算依赖关系-->
+    <dubbo:application name="dubbo_provider"/>
+    <!-- 用 dubbo 协议在 20880 端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880"/>
+    <!-- 使用 zookeeper 注册中心暴露服务地址 如果是集群配置 用, 分隔地址 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.245.128:2181"/>
+    <!--声明提供方暴露的接口-->
+    <dubbo:service interface="com.spring.service.inter.ProviderTest" ref="providerTest"/>
+
+
+    <bean id="providerTest" class="com.spring.service.impl.ProvicerTestImpl"></bean>
+</beans>

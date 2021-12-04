@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+      https://www.springframework.org/schema/context/spring-context.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+    <context:component-scan base-package="com.spring.service"/>
+    <!--消费方应用信息，用于计算依赖关系-->
+    <dubbo:application name="dubbo_consumer"/>
+    <!-- 用 dubbo 协议在 20880 端口暴露服务 -->
+    <!--<dubbo:protocol name="dubbo" port="20880"/>-->
+    <!-- 使用 zookeeper 注册中心暴露服务地址 如果是集群配置 用, 分隔地址 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.245.128:2181"/>
+    <!--声明消费方远程代理，可以像使用本地服务一样调用远程方法-->
+    <dubbo:reference id="consumerService" interface="com.spring.service.inter.ProviderTest" />
+
+
+</beans>
